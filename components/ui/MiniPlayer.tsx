@@ -3,10 +3,8 @@ import React from 'react';
 
 export default function MiniPlayer() {
   return (
-    <View>
-      <View className="bg-spotify h-44 w-36">
-        <Text>MiniPlayer</Text>
-      </View>
+    <View className="gap-3">
+      <View className="bg-spotify h-44 w-36 rounded-3xl"></View>
       <View>
         <Text className="text-base font-bold text-white">Bad Guy</Text>
         <Text className="text-sm font-normal text-white">Billie Eilish</Text>
