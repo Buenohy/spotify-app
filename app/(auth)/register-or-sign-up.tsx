@@ -19,13 +19,8 @@ export default function registerOrSignUp() {
           Spotify is a proprietary Swedish audio streaming and media services provider
         </Text>
         <View className="flex-row gap-20">
-          <ButtonAuth text="Register" link="/(auth)/choose-mode" size={'small'} />
-          <ButtonAuth
-            text="Sing in"
-            link="/(auth)/choose-mode"
-            size={'small'}
-            intent={'secondary'}
-          />
+          <ButtonAuth text="Register" link="/(auth)/register" size={'small'} />
+          <ButtonAuth text="Sing in" link="/(auth)/sing-up" size={'small'} intent={'secondary'} />
         </View>
       </View>
     </SafeAreaProvider>
