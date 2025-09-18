@@ -15,7 +15,7 @@ export default function register() {
           <InputAuth placeholder="Full Name" keyboardType="default" />
           <InputAuth placeholder="Enter Email" keyboardType="email-address" />
           <InputAuth placeholder="Password" keyboardType="default" />
-          <ButtonAuth link="/" text="Creat Account" size={'large'} />
+          <ButtonAuth link="/(app)/(tabs)/home-page" text="Creat Account" size={'large'} />
         </View>
         <FooterAuth
           text="
