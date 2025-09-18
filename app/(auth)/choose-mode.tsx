@@ -8,13 +8,13 @@ export default function ChooseMode() {
     <SafeAreaProvider>
       <View className="items-center justify-center">
         <Image source={require('../../assets/images/spotify-logo.png')} />
-        <Text className="">Enjoy listening to music</Text>
+        <Text className="mb-5 text-2xl font-bold text-[#DADADA]">Choose Mode</Text>
         <Text className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed
           phasellus. Cursus ornare id scelerisque aliquam.
         </Text>
         <Link href="/(auth)/get-startted">
-          <Text>Get Started</Text>
+          <Text>Continue</Text>
         </Link>
       </View>
     </SafeAreaProvider>
