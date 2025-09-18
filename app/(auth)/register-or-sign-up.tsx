@@ -8,7 +8,7 @@ import ButtonAuth from '~/components/ui/ButtonAuth';
 export default function registerOrSignUp() {
   return (
     <SafeAreaProvider>
-      <View className="items-center justify-center bg-[#0d0c0c] px-7">
+      <View className="flex-1 items-center  bg-[#1C1B1B] px-7">
         <Image
           source={require('../../assets/images/spotify-logo.png')}
           className="mb-14 mt-[175px]"
@@ -18,7 +18,15 @@ export default function registerOrSignUp() {
         <Text className="mb-9 text-center text-base font-normal text-[#797979]">
           Spotify is a proprietary Swedish audio streaming and media services provider
         </Text>
-        <ButtonAuth text="Register" link="/(auth)/choose-mode" size="h-16 w-36" />
+        <View className="flex-row gap-20">
+          <ButtonAuth text="Register" link="/(auth)/choose-mode" size={'small'} />
+          <ButtonAuth
+            text="Sing in"
+            link="/(auth)/choose-mode"
+            size={'small'}
+            intent={'secondary'}
+          />
+        </View>
       </View>
     </SafeAreaProvider>
   );

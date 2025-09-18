@@ -5,7 +5,7 @@ import ButtonAuth from '~/components/ui/ButtonAuth';
 export default function GetStartted() {
   return (
     <ImageBackground
-      source={require('../../assets/images/billie-eilish-green-hair-wallpapers-1.png')}
+      source={require('../../assets/images/billie-eilish-glasses-wallpapers-1.png')}
       className="flex-1 items-center justify-end bg-black"
       resizeMode="cover">
       <StatusBar barStyle="light-content" />

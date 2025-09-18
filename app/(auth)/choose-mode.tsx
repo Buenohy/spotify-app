@@ -6,7 +6,7 @@ import DarkMode from '~/components/DarkMode';
 export default function ChooseMode() {
   return (
     <ImageBackground
-      source={require('../../assets/images/billie-eilish-green-hair-wallpapers-1.png')}
+      source={require('../../assets/images/billie-eilish-green-hair-wallpapers-2.png')}
       className="flex-1 items-center justify-end bg-black"
       resizeMode="cover">
       <StatusBar barStyle="light-content" />
