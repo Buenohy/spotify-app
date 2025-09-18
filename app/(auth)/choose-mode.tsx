@@ -1,22 +1,31 @@
-import { View, Text, Image } from 'react-native';
-import { Link } from 'expo-router';
+import { View, Text, Image, ImageBackground, StatusBar } from 'react-native';
 import React from 'react';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import ButtonAuth from '~/components/ui/ButtonAuth';
+import DarkMode from '~/components/DarkMode';
 
 export default function ChooseMode() {
   return (
-    <SafeAreaProvider>
-      <View className="items-center justify-center">
-        <Image source={require('../../assets/images/spotify-logo.png')} />
-        <Text className="mb-5 text-2xl font-bold text-[#DADADA]">Choose Mode</Text>
-        <Text className="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed
-          phasellus. Cursus ornare id scelerisque aliquam.
-        </Text>
-        <Link href="/(auth)/get-startted">
-          <Text>Continue</Text>
-        </Link>
+    <ImageBackground
+      source={require('../../assets/images/billie-eilish-green-hair-wallpapers-1.png')}
+      className="flex-1 items-center justify-end bg-black"
+      resizeMode="cover">
+      <StatusBar barStyle="light-content" />
+
+      <View className="w-full items-center px-7 pb-16">
+        <Image
+          source={require('../../assets/images/spotify-logo.png')}
+          className="mb-8 h-10 w-32"
+        />
+
+        <Text className="mb-5 text-center text-4xl font-bold text-white">Choose Mode</Text>
+        <DarkMode />
+        <ButtonAuth
+          text="Get Started"
+          link="/(auth)/register-or-sign-up"
+          size={'large'}
+          intent={'primary'}
+        />
       </View>
-    </SafeAreaProvider>
+    </ImageBackground>
   );
 }
