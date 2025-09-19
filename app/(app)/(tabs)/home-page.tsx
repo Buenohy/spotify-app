@@ -5,6 +5,7 @@ import HeaderHome from '~/components/ui/HeaderHome';
 import BannerHome from '~/components/ui/BannerHome';
 import ListHome from '~/components/ui/ListHome';
 import MiniPlayer from '~/components/ui/MiniPlayer';
+import PlaylistHome from '~/components/ui/PlaylistHome';
 
 export default function HomePage() {
   return (
@@ -16,9 +17,15 @@ export default function HomePage() {
         </View>
         <View className="mt-10 gap-8">
           <ListHome />
-          <MiniPlayer />
+          <View className="mb-9 flex-row gap-3">
+            <MiniPlayer />
+            <MiniPlayer />
+            <MiniPlayer />
+          </View>
         </View>
-        <View></View>
+        <View>
+          <PlaylistHome />
+        </View>
       </View>
     </SafeAreaProvider>
   );
