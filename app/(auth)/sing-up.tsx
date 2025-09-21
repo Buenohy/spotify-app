@@ -18,7 +18,7 @@ export default function SingUp() {
           <Link href="/">
             <Text className="text-gray-500 text-left">Recovery password</Text>
           </Link>
-          <ButtonAuth link="/(app)/(tabs)/home-page" text="Sing In" size={'large'} />
+          <ButtonAuth link="/(app)/(tabs)/home" text="Sing In" size={'large'} />
         </View>
         <FooterAuth
           text="

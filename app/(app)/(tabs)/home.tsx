@@ -7,7 +7,7 @@ import ListHome from '~/components/ui/ListHome';
 import MiniPlayer from '~/components/ui/MiniPlayer';
 import PlaylistHome from '~/components/ui/PlaylistHome';
 
-export default function HomePage() {
+export default function Home() {
   return (
     <SafeAreaProvider>
       <View className="flex-1 bg-[#1C1B1B] px-7">
