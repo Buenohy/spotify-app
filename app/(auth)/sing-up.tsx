@@ -16,9 +16,9 @@ export default function SingUp() {
           <InputAuth placeholder="Enter Username Or Email" keyboardType="default" />
           <InputAuth placeholder="Password" keyboardType="default" />
           <Link href="/">
-            <Text className="text-left text-gray-500">Recovery password</Text>
+            <Text className="text-gray-500 text-left">Recovery password</Text>
           </Link>
-          <ButtonAuth link="/(app)/(tabs)/home-page" text="Sing In" size={'large'} />
+          <ButtonAuth link="/(app)/(tabs)/index" text="Sing In" size={'large'} />
         </View>
         <FooterAuth
           text="
