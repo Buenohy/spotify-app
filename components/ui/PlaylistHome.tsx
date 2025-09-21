@@ -1,24 +1,33 @@
-import { View, Text } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import React from 'react';
-import AntDesign from '@expo/vector-icons/AntDesign';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import SongItem from './SongItem';
+
+const PLAYLIST_DATA = [
+  { id: '1', title: 'As It Was', artist: 'Harry Styles', duration: '5:33' },
+  { id: '2', title: 'God Did', artist: 'DJ Khaled', duration: '3:43' },
+  { id: '3', title: 'First Class', artist: 'Jack Harlow', duration: '2:54' },
+  { id: '4', title: 'Blinding Lights', artist: 'The Weeknd', duration: '3:20' },
+];
 
 export default function PlaylistHome() {
   return (
     <View>
-      <View className="flex-row items-center justify-between">
+      <View className="mb-4 flex-row items-center justify-between">
         <Text className="text-white text-xl font-bold">Playlist</Text>
-        <Text className="text-white text-xs font-normal">See More</Text>
+        <TouchableOpacity>
+          <Text className="text-gray-400 text-xs font-normal">See More</Text>
+        </TouchableOpacity>
       </View>
-      <View className="mt-7 flex-row items-center gap-6">
-        <MaterialIcons name="play-circle" size={37} color="white" />
-        <View>
-          <Text className="text-white text-base font-bold">As It Was</Text>
-          <Text className="text-white text-xs font-normal">Harry Styles</Text>
-        </View>
-        <Text className="text-white pl-24 pr-20 text-sm font-normal">5:33</Text>
-        <AntDesign name="heart" size={21} color="white" />
-      </View>
+
+      <FlatList
+        data={PLAYLIST_DATA}
+        keyExtractor={(item) => item.id}
+        scrollEnabled={false}
+        ItemSeparatorComponent={() => <View className="h-5" />}
+        renderItem={({ item }) => (
+          <SongItem title={item.title} artist={item.artist} duration={item.duration} />
+        )}
+      />
     </View>
   );
 }
