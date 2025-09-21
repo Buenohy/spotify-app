@@ -14,7 +14,7 @@ export default function registerOrSignUp() {
           className="mb-14 mt-[175px]"
         />
 
-        <Text className="mb-5 text-2xl font-bold text-[#DADADA]">Enjoy Listening To Music</Text>
+        <Text className="text-white mb-5 text-2xl font-bold ">Enjoy Listening To Music</Text>
         <Text className="mb-9 text-center text-base font-normal text-[#797979]">
           Spotify is a proprietary Swedish audio streaming and media services provider
         </Text>

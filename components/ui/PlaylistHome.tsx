@@ -14,9 +14,9 @@ export default function PlaylistHome() {
         <MaterialIcons name="play-circle" size={37} color="white" />
         <View>
           <Text className="text-white text-base font-bold">As It Was</Text>
-          <Text className="text-xs font-normal">Harry Styles</Text>
+          <Text className="text-white text-xs font-normal">Harry Styles</Text>
         </View>
-        <Text className="pl-24 pr-20 text-sm font-normal">5:33</Text>
+        <Text className="text-white pl-24 pr-20 text-sm font-normal">5:33</Text>
         <AntDesign name="heart" size={21} color="white" />
       </View>
     </View>
