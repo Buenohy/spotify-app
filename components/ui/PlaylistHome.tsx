@@ -1,27 +1,56 @@
-import { View, Text, FlatList, TouchableOpacity } from 'react-native';
-import React from 'react';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import SongItem from './SongItem';
 
-const PLAYLIST_DATA = [
-  { id: '1', title: 'As It Was', artist: 'Harry Styles', duration: '5:33' },
-  { id: '2', title: 'God Did', artist: 'DJ Khaled', duration: '3:43' },
-  { id: '3', title: 'First Class', artist: 'Jack Harlow', duration: '2:54' },
-  { id: '4', title: 'Blinding Lights', artist: 'The Weeknd', duration: '3:20' },
-];
+const API_URL = 'http://192.168.226.1:4000/api/songs';
 
 export default function PlaylistHome() {
+  const [songs, setSongs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchSongs = async () => {
+      try {
+        const response = await axios.get(API_URL);
+
+        setSongs(response.data);
+      } catch (err) {
+        console.error('Erro ao buscar músicas da API:', err);
+        setError('Não foi possível carregar a playlist.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSongs();
+  }, []);
+
+  if (loading) {
+    return (
+      <View className="h-20 items-center justify-center">
+        <ActivityIndicator size="large" color="#FFFFFF" />
+      </View>
+    );
+  }
+
+  if (error) {
+    return <Text className="text-center text-red-500">{error}</Text>;
+  }
+
   return (
     <View>
       <View className="mb-4 flex-row items-center justify-between">
-        <Text className="text-white text-xl font-bold">Playlist</Text>
+        <Text className="text-xl font-bold text-white">Playlist</Text>
         <TouchableOpacity>
-          <Text className="text-gray-400 text-xs font-normal">See More</Text>
+          <Text className="text-xs font-normal text-gray-400">See More</Text>
         </TouchableOpacity>
       </View>
 
       <FlatList
-        data={PLAYLIST_DATA}
-        keyExtractor={(item) => item.id}
+        data={songs}
+        keyExtractor={(item: any) => item.id.toString()}
         scrollEnabled={false}
         ItemSeparatorComponent={() => <View className="h-5" />}
         renderItem={({ item }) => (
