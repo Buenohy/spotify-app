@@ -4,7 +4,7 @@ export default function AuthLayout() {
   return (
     <Stack
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
       }}>
       <Stack.Screen name="get-started" />
       <Stack.Screen name="choose-mode" />
