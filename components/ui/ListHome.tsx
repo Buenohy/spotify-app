@@ -19,7 +19,6 @@ export default function ListHome() {
     return (
       <TouchableOpacity onPress={() => setSelectedCategory(item.id)}>
         <View className="mr-6 items-center">
-          {' '}
           <Text className={`text-xl font-bold ${isActive ? 'text-white' : 'text-gray-400'}`}>
             {item.title}
           </Text>

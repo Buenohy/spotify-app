@@ -7,7 +7,7 @@ import FooterAuth from '~/components/ui/FooterAuth';
 import HeaderAuth from '~/components/ui/HeaderAuth';
 import { Link } from 'expo-router';
 
-export default function SingUp() {
+export default function SignUp() {
   return (
     <SafeAreaProvider>
       <View className="flex-1 items-center justify-center bg-[#1C1B1B] px-7">
@@ -16,7 +16,7 @@ export default function SingUp() {
           <InputAuth placeholder="Enter Username Or Email" keyboardType="default" />
           <InputAuth placeholder="Password" keyboardType="default" />
           <Link href="/">
-            <Text className="text-gray-500 text-left">Recovery password</Text>
+            <Text className="text-left text-gray-500">Recovery password</Text>
           </Link>
           <ButtonAuth link="/(app)/(tabs)/home" text="Sing In" size={'large'} />
         </View>
