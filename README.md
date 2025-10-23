@@ -2,7 +2,7 @@
 
 <p align="right"><a href="#-clone-da-ui-do-spotify">Leia em Português</a></p>
 
-![Project Screenshot](/assets/images/spotify-app-screenshot-4.png)
+![Project Screenshot](/assets/images/spotify-app-screenshot-0.png)
 
 A user interface clone of the Spotify mobile application, built with **React Native** and **Expo Router**. This project aims to replicate the core visual and navigational elements of the Spotify home screen, focusing on component structure and styling with **NativeWind** (**Tailwind CSS**).
 
@@ -69,7 +69,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 <p align="right"><a href="#-spotify-ui-clone">Read in English</a></p>
 
-![Screenshot do Projeto](/assets/images/spotify-app-screenshot-4.png)
+![Screenshot do Projeto](/assets/images/spotify-app-screenshot-0.png)
 
 Um clone da interface de usuário do aplicativo móvel do Spotify, construído com **React Native** e **Expo Router**. Este projeto visa replicar os principais elementos visuais e de navegação da tela inicial do Spotify, com foco na estrutura de componentes e estilização com **NativeWind** (**Tailwind CSS**).
 
