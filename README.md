@@ -55,11 +55,11 @@ You need to have [Node.js](https://nodejs.org/) (which includes npm) and [Expo G
     ```
     After running the command, scan the QR code with the Expo Go app on your phone.
 
-## 👤 Author
+## 👨‍💻 Author
 
-**Gabriel Bueno Hygino**
+Made with ❤️ by **Gabriel Bueno Hygino**
 
-## 📄 License
+## ⚖️ License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
@@ -122,10 +122,10 @@ Você precisa ter o [Node.js](https://nodejs.org/) (que inclui o npm) e o aplica
     ```
     Após executar o comando, escaneie o QR code com o aplicativo Expo Go no seu celular.
 
-## 👤 Autor
+## 👨‍💻 Autor
 
-**Gabriel Bueno Hygino**
+Feito com ❤️ por **Gabriel Bueno Hygino**
 
-## 📄 Licença
+## ⚖️ Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
